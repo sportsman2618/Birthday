@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10152c">
+<title>For You ✦ Birthday Letter</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
+:root{--navy:#10152c;--navy2:#202b4d;--cream:#fff8eb;--pink:#ffc6d9;--gold:#f3d59a;--lav:#d9ccff;--mint:#bdf4e3;--ink:#252844}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:radial-gradient(circle at 10% 12%,#62508a 0,transparent 27%),radial-gradient(circle at 90% 85%,#316f83 0,transparent 28%),linear-gradient(145deg,#0b1024,#172342 55%,#251c3e);color:var(--cream);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+.bg-glow{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.orb{position:absolute;border-radius:50%;filter:blur(2px);opacity:.2;animation:float 12s ease-in-out infinite}.orb.one{width:230px;height:230px;background:#ff9dc3;top:8%;left:-90px}.orb.two{width:280px;height:280px;background:#80e9d2;right:-120px;bottom:4%;animation-delay:-5s}.orb.three{width:120px;height:120px;background:#bba7ff;right:16%;top:12%;animation-delay:-3s}@keyframes float{50%{transform:translate(20px,-25px) scale(1.08)}}
+.sparkle{position:fixed;z-index:0;color:#ffe6ac;opacity:.65;pointer-events:none;animation:twinkle 3s infinite alternate}.s1{top:12%;left:9%}.s2{top:27%;right:8%;animation-delay:1s}.s3{bottom:15%;left:12%;animation-delay:1.7s}.s4{bottom:30%;right:15%;animation-delay:.6s}@keyframes twinkle{from{opacity:.2;transform:scale(.8) rotate(0)}to{opacity:1;transform:scale(1.2) rotate(18deg)}}
+.shell{position:relative;z-index:1;width:min(900px,92%);margin:auto;min-height:100vh;padding:24px 0 28px;display:flex;flex-direction:column;justify-content:center}.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:17px;color:#d5d9e9;font-size:11px;letter-spacing:2px;text-transform:uppercase}.brand{color:var(--gold);font-weight:700}.tiny-heart{color:var(--pink);font-size:17px}.progress-meta{display:flex;justify-content:space-between;font-size:11px;color:#c6cbe0;margin-bottom:7px;letter-spacing:1px}.track{height:5px;background:#ffffff20;border-radius:20px;overflow:hidden;margin-bottom:17px}.fill{height:100%;width:0;background:linear-gradient(90deg,var(--pink),var(--gold),var(--mint));border-radius:20px;transition:width .45s ease}
+.card{position:relative;min-height:540px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:clamp(24px,6vw,62px);border:1px solid #ffffff28;border-radius:30px;background:linear-gradient(140deg,#ffffff13,#ffffff06);backdrop-filter:blur(16px);box-shadow:0 28px 90px #0004,inset 0 1px #ffffff16;overflow:hidden}.card:before{content:'';position:absolute;inset:10px;border:1px solid #f3d59a25;border-radius:22px;pointer-events:none}.page{width:100%;animation:arrive .55s ease both}@keyframes arrive{from{opacity:0;transform:translateY(15px) scale(.99)}to{opacity:1;transform:translateY(0) scale(1)}}.eyebrow{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin:0 0 16px;font-weight:700}.sticker-row{display:flex;justify-content:center;align-items:center;gap:10px;margin:0 0 16px}.sticker{display:inline-flex;align-items:center;justify-content:center;width:43px;height:43px;border-radius:15px;color:#2a2341;background:var(--pink);font-size:22px;box-shadow:0 7px 18px #0002;transform:rotate(-8deg)}.sticker:nth-child(2){background:var(--gold);transform:rotate(7deg)}.sticker:nth-child(3){background:var(--mint);transform:rotate(-4deg)}h1{font:500 clamp(36px,7.5vw,68px)/1.12 'Playfair Display',Georgia,serif;letter-spacing:-1px;margin:0 auto;max-width:760px;color:#fff9ee;text-wrap:balance}h2{font:500 clamp(30px,6vw,48px)/1.2 'Playfair Display',Georgia,serif;margin:0 auto;color:#fff9ee;text-wrap:balance}.divider{color:var(--gold);letter-spacing:9px;margin:20px 0;font-size:17px}.message{max-width:630px;margin:0 auto;color:#e9e9f2;font-size:clamp(16px,2.3vw,20px);line-height:1.9;white-space:pre-line;overflow-wrap:anywhere}.soft{color:#cdd3e5;font-size:13px;line-height:1.7;margin-top:20px}.photo{display:block;width:100%;max-width:400px;height:260px;object-fit:cover;object-position:center;border-radius:19px;padding:5px;border:1px solid #f3d59a99;background:#ffffff0c;margin:0 auto 22px;box-shadow:0 15px 35px #0003}.caption{font-size:11px;color:var(--gold);letter-spacing:1.5px;margin:-10px 0 22px}.buttons{position:relative;z-index:2;display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:28px;width:100%}.btn{border:1px solid #f3d59a80;background:linear-gradient(135deg,#ffe7b4,#e9c6ff);color:#28243d;border-radius:50px;padding:13px 22px;font-weight:700;font-size:13px;cursor:pointer;transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-3px);box-shadow:0 8px 25px #0003}.btn.secondary{background:#ffffff08;color:#fff8eb;border-color:#ffffff45}.btn:disabled{opacity:.28;cursor:not-allowed;transform:none}.footer{text-align:center;color:#aeb7d0;font-size:10px;letter-spacing:2px;margin-top:18px}.calendar{width:min(300px,100%);margin:0 auto 22px;padding:17px;border-radius:20px;background:linear-gradient(145deg,#fff8eb,#f8dce9);color:#282844;box-shadow:0 16px 35px #0003;transform:rotate(-1deg);border:4px solid #fff9f1}.cal-head{display:flex;justify-content:space-between;align-items:center;color:#6b547a;font-size:11px;letter-spacing:2px;font-weight:700}.cal-month{font:500 29px 'Playfair Display',serif;color:#242b4a;margin:5px 0 12px}.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}.cal-grid span{display:flex;align-items:center;justify-content:center;min-height:28px;font-size:12px;border-radius:50%}.cal-grid .day{color:#9b829b;font-size:10px;font-weight:700}.cal-grid .birthday{background:#ff9fbe;color:#3b2547;font-weight:800;position:relative;box-shadow:0 0 0 3px #ff9fbe45}.cal-note{font-size:10px;letter-spacing:1px;color:#725c7a;margin-top:12px}.birthday-badge{display:inline-block;background:#ffc6d9;color:#34243e;padding:7px 13px;border-radius:20px;font-size:11px;font-weight:700;letter-spacing:1px;margin-bottom:15px}.end-note{display:inline-block;border:1px solid #f3d59a50;color:var(--gold);border-radius:50px;padding:10px 15px;margin-top:20px;font-size:10px;letter-spacing:2px}
+@media(max-width:600px){.shell{width:94%;padding:17px 0}.topbar{font-size:9px;letter-spacing:1px}.card{min-height:590px;padding:32px 22px;border-radius:23px}.card:before{inset:7px;border-radius:17px}.sticker{width:37px;height:37px;font-size:19px}.message{line-height:1.8}.btn{padding:12px 17px}.calendar{max-width:270px}.photo{height:220px}.buttons{margin-top:24px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="bg-glow" aria-hidden="true"><div class="orb one"></div><div class="orb two"></div><div class="orb three"></div></div>
+<div class="sparkle s1">✦</div><div class="sparkle s2">✧</div><div class="sparkle s3">✦</div><div class="sparkle s4">✧</div>
+<main class="shell">
+  <div class="topbar"><span class="brand">A little something for you</span><span>made with care <span class="tiny-heart">♡</span></span></div>
+  <div class="progress-meta"><span id="stepLabel">A SMALL BEGINNING</span><span id="stepCount">01 / 07</span></div>
+  <div class="track"><div class="fill" id="progress"></div></div>
+  <section class="card" aria-live="polite">
+    <div class="page" id="page"></div>
+    <div class="buttons"><button class="btn secondary" id="prev" type="button">← Previous</button><button class="btn" id="next" type="button">Open the letter ✨</button></div>
+  </section>
+  <div class="footer">TUMHARA MAQAM · 18 OCTOBER · A BIRTHDAY LETTER</div>
+</main>
+<script>
+/* =============================================================
+   EDIT THIS PART ONLY TO PERSONALIZE THE WEBSITE.
+   - Change HER_NAME.
+   - Edit title and text for each screen.
+   - Add your own photos in the src fields, e.g. images/photo1.jpg
+   - Keep images inside an "images" folder next to index.html.
+   ============================================================= */
+const HER_NAME = "Tum"; // Her name or nickname
+const HINA = "Hina"; // Used in the birthday title
+const PAGES = [
+ {tag:"A SMALL BEGINNING", stickers:["✦","♡","✧"], title:"Aaj ka din…", text:"Aaj ka din tumhare naam.\n\nKoi bohat lambi baat nahi — bas ek chhota si koshesh, jo khaas taur par tumhare liye banaya hai.\n\nAaram se dekhna. Har safha apni jagah ek chhoti si baat rakhta hai.", image:"", caption:"", button:"Agy kholo →"},
+ {tag:"SAVE THIS DATE", stickers:["🎀","🌙","✨"], title:"18 October — tumhara din", text:"Calendar par ek tareekh aur hoti hai… magar kuch tareekhein kisi ke liye muskurahat le kar aati hain.\n\nAaj ki tareekh tumhare naam — tumhari khushi, tumhari muskurahat aur tumhare naye saal ke liye.", calendar:true, image:"", caption:"", button:"Calendar dekha? →"},
+ {tag:"SOME PEOPLE MATTER", stickers:["🌷","✦","💌"], title:"Kuch log Hmesha khaas rehte hain", text:"Zindagi mein waqt ke saath bohat kuch badal jata hai. Halaat, baatein aur rishton ki soorat bhi.\n\nLekin har tabdeeli ka matlab yeh nahi hota ke kisi insaan ki qadar bhi badal jaye.\n\nKuch log apni jagah khaas rehte hain — bas unki jagah ko samajhne ka andaaz badal jata hai.", image:"", caption:"", button:"Ek aur baat…"},
+ {tag:"RESPECT & VALUE", stickers:["🤍","🕊️","✧"], title:"You still value to me ", text:"Tumhari izzat, tumhari qadar aur tumhare liye achha chahna — yeh sab kisi ek naam ke mohtaaj nahi.\n\nTumhari apni pehchaan hai, apni ahmiyat hai. Main dil se chahta hoon ke tumhein zindagi mein woh khushi aur sukoon mile jis ki tum haqdaar ho.\n\nAllah pak tumha bhoot khushia dy , Aor agar koi dukh tumhari traf qadam barhany ki jisarat kary to meri dua hai os kay qadam wahi jamid ho jae .", image:"", caption:"", button:"Yaadon wala safha →"},
+ {tag:"A LITTLE MEMORY", stickers:["📸","🌸","♡"], title:"Kuch yaadein…", text:"Kuch lamhe chhote hote hain, magar yaad reh jate hain. Kabhi koi baat, kabhi koi hansi, kabhi koi aisa pal jo us waqt aam sa laga ho.\n\nAor tumhary sath guzara har waqt har lamha har yad aj bhe jesy onglio pa yad ho — mae phla jesi baty ni krta mgr esa ni keh kch yad he ni \n\nHansi , Qehqahy , Zid , Larai , Mananana , Gussa , Piyar , Pagal pan , Janoniyat , Risk , La parwahia , Mulaqaty , wo tumhara ana , wo tumhara jana sab yad hai ", image:"images/memory.jpg", button:"Agla safha →"},
+ {tag:"A WISH FOR YOUR YEAR", stickers:["🌟","🦋","🌷"], title:"Dil se ek dua", text:"Dua hai ke tumhari zindagi mein aasaniyan barhein, tumhare khwab tumhare qareeb aayen aur tumhara chehra hmesha khilkhilata rahy . .\n\nTumhein aise log milen jo tumhari baat sunein, tumhari izzat karein aur tumhari khushi ko dil se samjhein.\n\nApne liye bhi waqt nikalna, apni qadar karna aur woh sab karna jo tumhare dil ko sukoon de. \n\n aor tmhary khuushia kesi pa depend na kry", image:"", caption:"", button:"Aakhri safha…"},
+ {tag:"HAPPY BIRTHDAY HINA", stickers:["🎂","💗","✨"], title:"Happy Birthday, " + HINA + "!", text:"Tumhari zindagi ka naya saal khoobsurat mauqon, achhe logon aur dil ke sukoon se bhara ho.\n\nI respect you , I value you and many more than that as well .\n\nApna khayal rakhna, khush rehna aur apni zindagi ko un cheezon se bharna jo tumhein waqai khushi deti hain.\n\nJanam din mubarak ho Hina.  Aaj ka din tumhare liye bohat pyara ho. 🤍", image:"", caption:"", button:"Birthday wish copy karo ♡", final:true}
+];
+/* END OF PERSONALIZATION AREA */
+
+let current = 0;
+const pageEl = document.getElementById('page');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function calendarMarkup(){
+  const cells = ['S','M','T','W','T','F','S'].map(d=>`<span class="day">${d}</span>`);
+  // October 2026 starts on Thursday; highlight the 18th.
+  for(let i=0;i<4;i++) cells.push('<span></span>');
+  for(let d=1;d<=31;d++) cells.push(`<span class="${d===18?'birthday':''}">${d}</span>`);
+  return `<div class="calendar"><div class="cal-head"><span>A DATE TO CELEBRATE</span><span>♡</span></div><div class="cal-month">October 2026</div><div class="cal-grid">${cells.join('')}</div><div class="cal-note">✦ SUNDAY, 18 OCTOBER ✦</div></div>`;
+}
+function render(){
+ const p=PAGES[current];
+ const stickers=(p.stickers||[]).map(s=>`<span class="sticker">${esc(s)}</span>`).join('');
+ const photo=p.image?`<img class="photo" src="${esc(p.image)}" alt="${esc(p.caption||'Personal memory')}" onerror="this.style.display='none'"><div class="caption">${esc(p.caption||'')}</div>`:'';
+ pageEl.innerHTML=`<div class="eyebrow">${esc(p.tag)}</div><div class="sticker-row">${stickers}</div>${p.calendar?calendarMarkup():''}${photo}<h1>${esc(p.title)}</h1><div class="divider">✦ · ✧ · ✦</div><p class="message">${esc(p.text)}</p>${p.final?'<div class="end-note">MADE WITH RESPECT & CARE ♡</div>':''}`;
+ document.getElementById('stepLabel').textContent=p.tag;
+ document.getElementById('stepCount').textContent=`${String(current+1).padStart(2,'0')} / ${String(PAGES.length).padStart(2,'0')}`;
+ document.getElementById('progress').style.width=((current+1)/PAGES.length*100)+'%';
+ prevBtn.disabled=current===0;
+ nextBtn.textContent=p.button||'Next →';
+ pageEl.style.animation='none';void pageEl.offsetWidth;pageEl.style.animation='arrive .55s ease both';
+}
+prevBtn.addEventListener('click',()=>{if(current>0){current--;render();}});
+nextBtn.addEventListener('click',async()=>{
+ if(current<PAGES.length-1){current++;render();window.scrollTo({top:0,behavior:'smooth'});return;}
+ const p=PAGES[PAGES.length-1];const wish=p.title+'\n\n'+p.text;
+ try{await navigator.clipboard.writeText(wish);nextBtn.textContent='Copied with love ✓';}
+ catch(e){window.prompt('Copy the birthday wish:',wish);}
+});
+render();
+</script>
+</body>
+</html>
